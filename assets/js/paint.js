@@ -1,9 +1,10 @@
 function configureListeners() {
-    let images = // select img elements  
+    let images = document.getElementsByTagName('img'); // select img elements  
 
 
      for (var i = 0; i < images.length; i++) {        
-        // iterate over images and add mouseover event listeners      
+        // iterate over images and add mouseover event listeners
+
     } 
 }
 
@@ -61,11 +62,13 @@ function getProductInfo(paintColor) {
 
     function updatePrice(colorName, price)
     {       
-        let colorPrice = // select element with corresponding id
+        let colorPrice = document.getElementById('color-price'); // select element with corresponding id
         // display price
+        colorPrice.textContent = price;
         
-        let color = // select element with corresponding id
+        let color = document.getElementById('color-name');// select element with corresponding id
         //display color name
+        color.textContent = colorName;
     }
     
 }
